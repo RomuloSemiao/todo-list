@@ -1,0 +1,67 @@
+@import "../../sass/globals";
+
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        color: $gray-800;
+        text-align: center;
+        margin-right: 32px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        &-input,
+        &-button {
+            font-family: "Inter", sans-serif;
+            font-style: normal;
+            font-size: 16px;
+        }
+
+        &-input {
+            width: calc(300px - 34px);
+            height: calc(45px - 18px);
+            background: $gray-50;
+            border: 1px solid $gray-300;
+            border-radius: 16px;
+            padding: 8px 16px;
+            margin-bottom: 16px;
+
+            font-weight: 400;
+            line-height: 160%;
+            color: $gray-400;
+
+            ::placeholder {
+                font-family: "Inter", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: $gray-400;
+            }
+        }
+
+        &-button {
+            width: 300px;
+            height: 45px;
+            margin-top: 20px;
+            border: 0;
+            border-radius: 30px;
+            background: $gray-800;
+            cursor: pointer;
+
+            font-weight: 500;
+            line-height: 19px;
+            color: $gray-200;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import "./sass/globals";
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $gray-50;
+}
